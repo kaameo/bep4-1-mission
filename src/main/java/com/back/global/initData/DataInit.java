@@ -1,9 +1,9 @@
 package com.back.global.initData;
 
-import com.back.boundedContext.entity.Member;
-import com.back.boundedContext.entity.Post;
-import com.back.boundedContext.service.MemberService;
-import com.back.boundedContext.service.PostService;
+import com.back.boundedContext.member.entity.Member;
+import com.back.boundedContext.post.entity.Post;
+import com.back.boundedContext.member.service.MemberService;
+import com.back.boundedContext.post.service.PostService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
