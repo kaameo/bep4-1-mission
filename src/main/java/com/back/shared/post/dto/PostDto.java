@@ -1,6 +1,6 @@
 package com.back.shared.post.dto;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
+import com.back.standard.modelType.HasModelTypeCode;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 
 @AllArgsConstructor
 @Getter
-public class PostDto {
+public class PostDto implements HasModelTypeCode {
     private final int id;
     private final LocalDateTime createDate;
     private final LocalDateTime modifyDate;
@@ -16,4 +16,9 @@ public class PostDto {
     private final String authorName;
     private final String title;
     private final String content;
+
+    @Override
+    public String getModelTypeCode() {
+        return "Post";
+    }
 }
